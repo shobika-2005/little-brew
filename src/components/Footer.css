@@ -1,0 +1,157 @@
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  width: 100%;
+  background: #504236;
+  color: #f5eee5;
+  padding: 75px 10% 25px;
+}
+
+
+/* ================================
+   FOOTER MAIN
+================================ */
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1.2fr;
+  gap: 45px;
+  padding-bottom: 60px;
+}
+
+
+/* ================================
+   BRAND
+================================ */
+
+.footer-brand h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.footer-brand h2 span {
+  color: #c69b63;
+}
+
+.footer-brand p {
+  color: #a99b8e;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 260px;
+}
+
+
+/* ================================
+   FOOTER HEADINGS
+================================ */
+
+.footer-main h3 {
+  color: #c69b63;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+
+/* ================================
+   FOOTER LINKS
+================================ */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  color: #bdb0a2;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c69b63;
+}
+
+
+/* ================================
+   CONTACT AND HOURS
+================================ */
+
+.footer-contact p,
+.footer-hours p {
+  color: #bdb0a2;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.footer-hours span {
+  display: block;
+  color: #8e8175;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 18px;
+}
+
+
+/* ================================
+   FOOTER BOTTOM
+================================ */
+
+.footer-bottom {
+  border-top: 1px solid #382d24;
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: #82766a;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 60px 7% 25px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.8;
+  }
+}
